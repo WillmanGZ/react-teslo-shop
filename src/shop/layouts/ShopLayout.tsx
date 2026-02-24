@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import CustomHeader from "../components/CustomHeader";
+import CustomFooter from "../components/CustomFooter";
 
 export const ShopLayout = () => {
   return (
@@ -7,6 +8,7 @@ export const ShopLayout = () => {
       <div className="min-h-screen bg-background">
         <CustomHeader></CustomHeader>
         <Outlet></Outlet>
+        <CustomFooter></CustomFooter>
       </div>
     </>
   );
