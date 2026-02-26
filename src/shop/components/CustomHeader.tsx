@@ -18,10 +18,10 @@ const CustomHeader = () => {
     const newSearchParams = new URLSearchParams();
 
     if (!query) {
-      newSearchParams.delete("query");
+      newSearchParams.delete("q");
       return;
     } else {
-      newSearchParams.set("query", query);
+      newSearchParams.set("q", query);
     }
 
     setSearchParams(newSearchParams);
